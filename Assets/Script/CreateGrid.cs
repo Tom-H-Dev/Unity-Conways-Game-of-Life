@@ -209,7 +209,10 @@ public class CreateGrid : MonoBehaviour
         SceneManager.LoadScene(currentScene.name);
     }
 
-
+    /// <summary>
+    /// This will randomize all the cells if they start active or not
+    /// So all cells will be randomized and then the normal calculations continue
+    /// </summary>
     public void RandomCells()
     {
         for (int i = 0; i < _width; i++)
